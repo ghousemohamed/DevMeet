@@ -44,16 +44,16 @@ const CreateProfile = ({createProfile, history}) => {
     }
     return (
         <Fragment>
-            <h1 class="large text-primary">
+            <h1 className="large text-primary">
         Create Your Profile
       </h1>
-      <p class="lead">
-        <i class="fas fa-user"></i> Let's get some information to make your
+      <p className="lead">
+        <i className="fas fa-user"></i> Let's get some information to make your
         profile stand out
       </p>
       <small>* = required field</small>
-      <form class="form" onSubmit={e => onSubmit(e)}>
-        <div class="form-group">
+      <form className="form" onSubmit={e => onSubmit(e)}>
+        <div className="form-group">
           <select name="status" value={status} onChange={e => onChange(e)}>
             <option value="0">* Select Professional Status</option>
             <option value="Developer">Developer</option>
@@ -65,31 +65,31 @@ const CreateProfile = ({createProfile, history}) => {
             <option value="Intern">Intern</option>
             <option value="Other">Other</option>
           </select>
-          <small class="form-text">Give us an idea of where you are at in your career</small>
+          <small className="form-text">Give us an idea of where you are at in your career</small>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="text" placeholder="Company" name="company" value={company} onChange={e => onChange(e)}/>
-          <small class="form-text">Could be your own company or one you work for</small>
+          <small className="form-text">Could be your own company or one you work for</small>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="text" placeholder="Website" name="website" value={website} onChange={e => onChange(e)}/>
-          <small class="form-text">Could be your own or a company website</small>
+          <small className="form-text">Could be your own or a company website</small>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="text" placeholder="Location" name="location" value={location} onChange={e => onChange(e)}/>
-          <small class="form-text">City & state suggested (eg. Boston, MA)</small>
+          <small className="form-text">City & state suggested (eg. Boston, MA)</small>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="text" placeholder="* Skills" name="skills" value={skills} onChange={e => onChange(e)}/>
-          <small class="form-text">Please use comma separated values (eg.
+          <small className="form-text">Please use comma separated values (eg.
             HTML,CSS,JavaScript,PHP)</small>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input
             type="text"
             placeholder="Github Username"
             name="githubusername" value={githubusername} onChange={e => onChange(e)}/>
-          <small class="form-text">If you want your latest repos and a Github link, include your
+          <small className="form-text">If you want your latest repos and a Github link, include your
             username</small>
         </div>
         <div className="form-group">
