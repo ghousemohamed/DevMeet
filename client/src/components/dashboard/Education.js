@@ -16,7 +16,7 @@ const Education = ({education, deleteEducation}) => {
                 }
             </td>
             <td>
-                <button className='btn btn-danger' onClick={deleteEducation(edu._id)}>Delete</button>
+                <button className='btn btn-danger' onClick={() => deleteEducation(edu._id)}>Delete</button>
             </td>
         </tr>
     ))
@@ -43,4 +43,4 @@ Education.propTypes = {
     deleteEducation: PropTypes.func.isRequired
 }
 
-export default connect(null, deleteEducation)(Education);
+export default connect(null, {deleteEducation})(Education);
